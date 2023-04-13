@@ -15,9 +15,10 @@ Vivek Divakarla, Travis DeBruyn
 
 ### Limitations:
 - The main limitations of our results are time and computing power. The datasets that we are using are massive and needed to be trimmed for the purposes of this project.
-- Our other limitation is the lack of player data. Teams are comprised of players and a coaching staff. In a perfect world where we have infinite time, we could create models to grade players. It would then be possible to create models that, based on player grades, predict the level of a team. 
+- Our other limitation is the lack of player data. Teams are comprised of players and a coaching staff. In a perfect world where we have infinite time, we could create models to grade players. It would then be possible to create models that, based on player grades, predict the level of a team. We simply do not have the time or data to accomplish this at the moment.
 
 ## Setup
+- The first look at our dataset is as follows:
 
 ## Results
 
