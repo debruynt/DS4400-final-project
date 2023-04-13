@@ -29,11 +29,17 @@ Vivek Divakarla, Travis DeBruyn
 - We are going to use LDA to understand the features of our data better, and then likely use Logistic Regression to create a model to predict NFL win/loss ratio by team.
 
 ## Results
-### 
+- The following shows our tests of classifiers in an attempt to find that which fits our data best.![classifiers](https://user-images.githubusercontent.com/71042338/231737731-407f5297-0794-42b0-adb7-fa6c159dec90.png)
+- Looking at the test error of each, LDA performs the best on our dataset. This makes sense as we want a general rule that can be applied to the whole NFL, and not one that fluctuates based on team.
+- This left us with the following feature importance graph (when applying a random forest classifier to the data).![featureimportancegraph](https://user-images.githubusercontent.com/71042338/231738385-c30af62b-af83-44bc-ab6e-a618d1f82b65.png)
 
 ## Discussion
+- We found it interesting that offensive stats seemed to be the most important metric, and defensive stats seemed to have very little importance. This could be explained by the common observation that teams are generally more consistent on offense, and their defensive performance fluctuates based on the strength of their opponent.
+- Also, turnover percent has a low correlation as well. We believe that this is similar to defense in that a team's turnover percent is generally not consistent.
 
 ## Conclusion
+In this project, we have taken a deeper look into what causes NFL teams to win or lose games. What are the statistics that bettors should be most wary of when choosing to spend their money on a team's perceived chance at victory? We have found that bettors should look at a team's offensive capabilities as their primary source of information. The expected points and yards per play features are important pieces of the puzzle, as well as the scoring of a team's offense.
 
 ## References
+- [[https://topfunky.com/2021/logistic-regression-nfl-win-probability/]]
 
