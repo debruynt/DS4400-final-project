@@ -18,8 +18,7 @@ Vivek Divakarla, Travis DeBruyn
 - Our other limitation is the lack of player data. Teams are comprised of players and a coaching staff. In a perfect world where we have infinite time, we could create models to grade players. It would then be possible to create models that, based on player grades, predict the level of a team. We simply do not have the time or data to accomplish this at the moment.
 
 ## Setup
-- The first look at our dataset is as follows:
-
+- The first look at our dataset is as follows: basicstats.png
 ## Results
 
 ## Discussion
