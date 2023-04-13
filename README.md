@@ -18,9 +18,18 @@ Vivek Divakarla, Travis DeBruyn
 - Our other limitation is the lack of player data. Teams are comprised of players and a coaching staff. In a perfect world where we have infinite time, we could create models to grade players. It would then be possible to create models that, based on player grades, predict the level of a team. We simply do not have the time or data to accomplish this at the moment.
 
 ## Setup
-- The first look at our dataset is as follows: ![basicstats](https://user-images.githubusercontent.com/71042338/231732408-4a6026bb-f1e7-4a2c-a963-f5459caac0ea.png)
+### Data:
+- The first look at our dataset after cleaning is as follows: ![basicstats](https://user-images.githubusercontent.com/71042338/231732408-4a6026bb-f1e7-4a2c-a963-f5459caac0ea.png)
+- This is just the first 5 rows of our dataset. As we can see, there are a multitude of statistics that help describe the playstyle and efficacy of each team in the NFL. Then, we looked at some visualizations of our data.![yardspplay](https://user-images.githubusercontent.com/71042338/231735732-d89c329c-d571-446f-94ef-dfce7340f214.png)![pointdiff](https://user-images.githubusercontent.com/71042338/231736734-2d83cc75-38e5-4aee-b0bc-8d878fb736a7.png)
+
+
+### Experiment Setup:
+- As mentioned previously, we tested different classifiers and compared their results to find the features that are most important to winning an NFL game. LDA resulted in the lowest test error.
+- We are using a collaborative .ipynb file through Datalore to complete the majority of this project.
+- We are going to use LDA to understand the features of our data better, and then likely use Logistic Regression to create a model to predict NFL win/loss ratio by team.
 
 ## Results
+### 
 
 ## Discussion
 
