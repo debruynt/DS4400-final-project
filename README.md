@@ -41,5 +41,5 @@ Vivek Divakarla, Travis DeBruyn
 In this project, we have taken a deeper look into what causes NFL teams to win or lose games. What are the statistics that bettors should be most wary of when choosing to spend their money on a team's perceived chance at victory? We have found that bettors should look at a team's offensive capabilities as their primary source of information. The expected points and yards per play features are important pieces of the puzzle, as well as the scoring of a team's offense.
 
 ## References
-- [[https://topfunky.com/2021/logistic-regression-nfl-win-probability/]]
+- https://topfunky.com/2021/logistic-regression-nfl-win-probability/
 
