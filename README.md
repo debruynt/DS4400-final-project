@@ -42,4 +42,5 @@ In this project, we have taken a deeper look into what causes NFL teams to win o
 
 ## References
 - https://topfunky.com/2021/logistic-regression-nfl-win-probability/
-
+- https://www.pro-football-reference.com/years/2022/opp.htm
+- https://www.pro-football-reference.com/years/2022/
