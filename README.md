@@ -20,7 +20,7 @@ Vivek Divakarla, Travis DeBruyn
 ## Setup
 ### Data:
 - The first look at our dataset after cleaning is as follows: ![basicstats](https://user-images.githubusercontent.com/71042338/231732408-4a6026bb-f1e7-4a2c-a963-f5459caac0ea.png)
-- This is just the first 5 rows of our dataset. As we can see, there are a multitude of statistics that help describe the playstyle and efficacy of each team in the NFL. Then, we looked at some visualizations of our data.![yardspplay](https://user-images.githubusercontent.com/71042338/231735732-d89c329c-d571-446f-94ef-dfce7340f214.png)![pointdiff](https://user-images.githubusercontent.com/71042338/231736734-2d83cc75-38e5-4aee-b0bc-8d878fb736a7.png)
+- This is just the first 5 rows of our dataset. As we can see, there are a multitude of statistics that help describe the playstyle and efficacy of each team in the NFL. Then, we looked at some visualizations of our data.![offypplay](https://user-images.githubusercontent.com/71042338/231737240-c92e601e-82aa-43a1-a057-9fd2bed00d1e.png)![pointdiff](https://user-images.githubusercontent.com/71042338/231736734-2d83cc75-38e5-4aee-b0bc-8d878fb736a7.png)
 
 
 ### Experiment Setup:
