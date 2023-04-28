@@ -32,6 +32,9 @@ Vivek Divakarla, Travis DeBruyn
 - The following shows our tests of classifiers in an attempt to find that which fits our data best.![classifiers](https://user-images.githubusercontent.com/71042338/231737731-407f5297-0794-42b0-adb7-fa6c159dec90.png)
 - Looking at the test error of each, LDA performs the best on our dataset. This makes sense as we want a general rule that can be applied to the whole NFL, and not one that fluctuates based on team.
 - This left us with the following feature importance graph (when applying a random forest classifier to the data).![featureimportancegraph](https://user-images.githubusercontent.com/71042338/231738385-c30af62b-af83-44bc-ab6e-a618d1f82b65.png)
+- We also added tests for a second target variable - whether a game goes over or under a point total. 
+<img width="694" alt="Screen Shot 2023-04-27 at 9 10 47 PM" src="https://user-images.githubusercontent.com/11672096/235030684-20b2e94f-3649-44cf-8313-879aeec8aa29.png">
+- The test errors were much higher for the training and testing on this variable, showing that the features are better in predicting whether teams cover the spread than going over the total. 
 
 ## Discussion
 - We found it interesting that offensive stats seemed to be the most important metric, and defensive stats seemed to have very little importance. This could be explained by the common observation that teams are generally more consistent on offense, and their defensive performance fluctuates based on the strength of their opponent.
