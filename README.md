@@ -5,6 +5,7 @@ Vivek Divakarla, Travis DeBruyn
 ### NFL Sports Betting:
 - What is the best information upon which NFL bets should be based?
 - It is impossible to predict the outcome of an NFL game with perfect accuracy, but are there patterns that we can identify to help improve our accuracy? The volatile nature of an NFL game makes it difficult to predict its outcome, but with the help of machine learning, we can find the best ways to spend our money in the process of predicting NFL games/scores.
+- For every NFL game, there is a point spread for the matchup. An example of this is Cleveland being -4 against Pittsburgh, with a total of 52.5. If Cleveland wins the game 35-21, the bets of Cleveland -4 and over 52.5 would hit, because Cleveland won by a greater margin than the point spread. 
 
 ### Approach:
 - We tested different classifiers and compared their results to help us find the most important features in relation to winning an NFL game.
@@ -21,21 +22,24 @@ Vivek Divakarla, Travis DeBruyn
 ### Data:
 - The first look at our dataset after cleaning is as follows: ![basicstats](https://user-images.githubusercontent.com/71042338/231732408-4a6026bb-f1e7-4a2c-a963-f5459caac0ea.png)
 - This is just the first 5 rows of our dataset. As we can see, there are a multitude of statistics that help describe the playstyle and efficacy of each team in the NFL. Then, we looked at some visualizations of our data.![offypplay](https://user-images.githubusercontent.com/71042338/231737240-c92e601e-82aa-43a1-a057-9fd2bed00d1e.png)![pointdiff](https://user-images.githubusercontent.com/71042338/231736734-2d83cc75-38e5-4aee-b0bc-8d878fb736a7.png)
-- The full cleaning process can be seen in the Python notebook file.
+
 
 ### Experiment Setup:
 - As mentioned previously, we tested different classifiers and compared their results to find the features that are most important to winning an NFL game. LDA resulted in the lowest test error.
-- We are using a collaborative .ipynb file through Datalore to complete the majority of this project. This allows us to work simultaneously on the project without worry of merge conflicts.
+- We are using a collaborative .ipynb file through Datalore to complete the majority of this project.
 - We are going to use LDA to understand the features of our data better, and then likely use Logistic Regression to create a model to predict NFL win/loss ratio by team.
 
 ## Results
-- The following shows our tests of classifiers in an attempt to find that which is best suited to the construction of this project.![classifiers](https://user-images.githubusercontent.com/71042338/231737731-407f5297-0794-42b0-adb7-fa6c159dec90.png)
+- The following shows our tests of classifiers in an attempt to find that which fits our data best.![classifiers](https://user-images.githubusercontent.com/71042338/231737731-407f5297-0794-42b0-adb7-fa6c159dec90.png)
 - Looking at the test error of each, LDA performs the best on our dataset. This makes sense as we want a general rule that can be applied to the whole NFL, and not one that fluctuates based on team.
 - This left us with the following feature importance graph (when applying a random forest classifier to the data).![featureimportancegraph](https://user-images.githubusercontent.com/71042338/231738385-c30af62b-af83-44bc-ab6e-a618d1f82b65.png)
+- We also added tests for a second target variable - whether a game goes over or under a point total. 
+<img width="694" alt="Screen Shot 2023-04-27 at 9 10 47 PM" src="https://user-images.githubusercontent.com/11672096/235030684-20b2e94f-3649-44cf-8313-879aeec8aa29.png">
+- The test errors were much higher for the training and testing on this variable, showing that the features are better in predicting whether teams cover the spread than going over the total. 
 
 ## Discussion
-- We found it interesting that offensive stats seemed to be the most important metric, and defensive stats seemed to have very little importance. This could be explained by the common observation that teams are generally more consistent on offense, and their defensive performance fluctuates based on the strength of their opponent. In essence, an offense is impacted less by the strength of the defense against which they are playing, while a defense's ability tends to fluctuate based on their opponents. In recent years, the NFL has made many changes to its rules to protect players on offense. This has, in turn, made it more difficult to play defense in general. The results of these rule changes are visible in the strategies that teams take in roster construction, as well as the most recent Super Bowl and playoff winners. 
-- Also, turnover percent has a low correlation as well. We believe that this is similar to defense in that a team's turnover percent is generally not consistent across a season.
+- We found it interesting that offensive stats seemed to be the most important metric, and defensive stats seemed to have very little importance. This could be explained by the common observation that teams are generally more consistent on offense, and their defensive performance fluctuates based on the strength of their opponent.
+- Also, turnover percent has a low correlation as well. We believe that this is similar to defense in that a team's turnover percent is generally not consistent.
 
 ## Conclusion
 In this project, we have taken a deeper look into what causes NFL teams to win or lose games. What are the statistics that bettors should be most wary of when choosing to spend their money on a team's perceived chance at victory? We have found that bettors should look at a team's offensive capabilities as their primary source of information. The expected points and yards per play features are important pieces of the puzzle, as well as the scoring of a team's offense.
