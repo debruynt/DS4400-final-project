@@ -5,6 +5,7 @@ Vivek Divakarla, Travis DeBruyn
 ### NFL Sports Betting:
 - What is the best information upon which NFL bets should be based?
 - It is impossible to predict the outcome of an NFL game with perfect accuracy, but are there patterns that we can identify to help improve our accuracy? The volatile nature of an NFL game makes it difficult to predict its outcome, but with the help of machine learning, we can find the best ways to spend our money in the process of predicting NFL games/scores.
+- For every NFL game, there is a point spread for the matchup. An example of this is Cleveland being -4 against Pittsburgh, with a total of 52.5. If Cleveland wins the game 35-21, the bets of Cleveland -4 and over 52.5 would hit, because Cleveland won by a greater margin than the point spread. 
 
 ### Approach:
 - We tested different classifiers and compared their results to help us find the most important features in relation to winning an NFL game.
