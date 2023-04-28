@@ -38,7 +38,7 @@ Vivek Divakarla, Travis DeBruyn
 - The test errors were much higher for the training and testing on this variable, showing that the features are better in predicting whether teams cover the spread than going over the total. 
 
 ## Discussion
-- We found it interesting that offensive stats seemed to be the most important metric, and defensive stats seemed to have very little importance. This could be explained by the common observation that teams are generally more consistent on offense, and their defensive performance fluctuates based on the strength of their opponent.
+- We found it interesting that offensive stats seemed to be the most important metric, and defensive stats seemed to have very little importance. This could be explained by the common observation that teams are generally more consistent on offense, and their defensive performance fluctuates based on the strength of their opponent. In essence, an offense is impacted less by the strength of the defense against which they are playing, while a defense's ability tends to fluctuate based on their opponents. In recent years, the NFL has made many changes to its rules to protect players on offense. This has, in turn, made it more difficult to play defense in general. The results of these rule changes are visible in the strategies that teams take in roster construction, as well as the most recent Super Bowl and playoff winners.
 - Also, turnover percent has a low correlation as well. We believe that this is similar to defense in that a team's turnover percent is generally not consistent.
 
 ## Conclusion
